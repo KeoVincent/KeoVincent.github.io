@@ -1,1 +1,36 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiation à la programmation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        /* create event handler that loads content into main area when navigation link is clicked */
+        $(document).ready(function () {
+            $('#link1').click(function () {
+                $('#main_body').load('overview.html');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="mainheader">
+        <h3>My Project Name</h3>
+    </div>
+
+    <div class="topnav">
+        <a id="link1">Overview</a>
+    </div>
+
+    <!-- where you want the page to load -->
+    <div id="main_body"></div>
+
+</body>
+
+</html>
